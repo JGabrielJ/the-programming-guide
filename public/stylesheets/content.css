@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+
+body {
+	margin: 0;
+	background-color: #2B2A38;
+	font-family: 'Inter', sans-serif;
+}
+
+header, footer {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+#info {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	background-color: white;
+	justify-content: flex-start;
+	padding: 50px 100px 0px 100px;
+}
+
+#tests {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	background-color: white;
+	justify-content: flex-start;
+}
+
+.col {
+	padding: 3%;
+}
+
+#perf {
+	position: relative;
+}
+
+#prof-photo {
+	border-radius: 50%;
+}
+
+#box {
+	left: 0;
+	bottom: 0;
+	width: 50px;
+	padding: 7px;
+	display: flex;
+	position: absolute;
+	border-radius: 7px;
+	justify-content: center;
+	background-color: gray;
+	margin: 0px 0px 15px 15px;
+}
+
+#box p {
+	margin: 0;
+	color: white;
+	font-size: small;
+	padding-left: 5px;
+}
+
+#details {
+	width: 70%;
+}
+
+#title {
+	font-weight: normal;
+	border-bottom: 1px solid gray;
+}
+
+#info dt {
+	padding-bottom: 5px;
+}
+
+#info dd {
+	margin: 0;
+	padding: 3px;
+	border: 2px solid gray;
+	border-radius: 5px;
+}
+
+#password {
+	padding: 7px;
+	display: flex;
+	border-radius: 5px;
+	justify-content: center;
+	background-color: gray;
+}
+
+#password p {
+	margin: 0;
+	color: white;
+	font-size: small;
+}
+
+#fav {
+	padding-top: 50px;
+}
+
+#fav h3 {
+	font-weight: normal;
+}
+
+#fav-box {
+	height: 100px;
+}
+
+#fav-box p {
+	margin: 0;
+	padding: 5px;
+}
+
+.tabs {
+	text-align: center;
+	background-color: #EFEFEF;
+}
+
+.tabs h3 {
+	padding: 10px;
+	font-weight: normal;
+	background-color: #9F9F9F;
+}
+
+.tabs ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tabs li {
+	padding: 10px;
+	border-right: 2px solid #9F9F9F;
+	border-bottom: 2px solid #9F9F9F;
+	border-left: 2px solid #9F9F9F;
+}
+
+.tabs li:hover {
+	cursor: pointer;
+	background-color: #CFCFCF;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+.left {
+	float: left;
+	padding: 10px 0px 0px 15px;
+}
+
+.left h1 {
+	color: white;
+	font-weight: normal;
+}
+
+.right {
+	float: right;
+}
+
+.right a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.right a:hover {
+	background-color: #32CD32;
+}
+
+#profile {
+	padding: 10px 15px 5px 15px;
+}
+
+footer h6 {
+	color: white;
+	margin-left: 10%;
+	margin-bottom: 1%;
+}
+
+.ref {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.ref h2 {
+	padding: 3%;
+	color: white;
+}
+
+.ref li {
+	color: white;
+}
+
+.ref a {
+	color: deepskyblue;
+	text-decoration: none;
+}

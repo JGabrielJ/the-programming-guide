@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+	margin: 0;
+	background-color: #2B2A38;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+.left {
+	float: left;
+	padding: 10px 0px 0px 15px;
+}
+
+.left h1 {
+	color: white;
+	font-weight: normal;
+}
+
+.right {
+	float: right;
+}
+
+.right a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.right a:hover {
+	background-color: #32CD32;
+}
+
+#profile {
+	padding: 10px 15px 5px 15px;
+}
+
+#init, #python, #javascript {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 75px 0px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#init {
+	background-color: #FFE3E3;
+}
+
+#python {
+	background-color: #D9ECEC;
+}
+
+#javascript {
+	background-color: #FFF5A5;
+}
+
+.col {
+	padding: 3%;
+	text-align: center;
+}
+
+hr {
+	margin: 0;
+	border: 5px solid black;
+}
+
+.desc {
+	width: 40%;
+}
+
+#photo {
+	border-radius: 50%;
+}
+
+.rowWhite, .rowDark {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 75px 0px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.rowWhite {
+	background-color: white;
+}
+
+.rowDark {
+	color: white;
+}
+
+.col-left h1 {
+	font-size: 60px;
+    font-weight: bold;
+}
+
+.col-left h3 {
+	font-size: 20px;
+}
+
+.col-left h4 {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.col-left h5 {
+	margin: 10px;
+	font-size: 15px;
+}
+
+.col-right {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.box {
+	width: 200px;
+	padding: 2% 3%;
+}
+
+.box a {
+	text-decoration: none;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#card-py {
+	background-color: #5BB1D9;
+}
+
+#card-js {
+	background-color: #FFF080;
+}
+
+.card h2 {
+	font-size: 30px;
+	font-style: bold;
+}
+
+footer h6 {
+	color: white;
+	margin-left: 10%;
+	margin-bottom: 1%;
+}
+
+.ref {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.ref h2 {
+	padding: 3%;
+	color: white;
+}
+
+.ref li {
+	color: white;
+}
+
+.ref a {
+	color: deepskyblue;
+	text-decoration: none;
+}
+
+#email {
+	color: blue;
+}
