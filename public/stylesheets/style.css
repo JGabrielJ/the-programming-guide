@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 	padding: 10px 15px 5px 15px;
 }
 
-#init, #python, #javascript {
+#init, #python, #javascript, #html {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 75px 0px;
@@ -60,10 +60,14 @@ h1, h2, h3, h4 {
 }
 
 #python {
-	background-color: #D9ECEC;
+	background-color: #DDFFAA;
 }
 
 #javascript {
+	background-color: #D9ECEC;
+}
+
+#html {
 	background-color: #FFF5A5;
 }
 
@@ -122,7 +126,8 @@ hr {
 
 .col-right {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .box {
@@ -140,10 +145,14 @@ hr {
 }
 
 #card-py {
-	background-color: #5BB1D9;
+	background-color: #45CC45;
 }
 
 #card-js {
+	background-color: #5BB1D9;
+}
+
+#card-html {
 	background-color: #FFF080;
 }
 

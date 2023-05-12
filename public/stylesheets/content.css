@@ -114,6 +114,7 @@ h1, h2, h3, h4 {
 }
 
 .tabs {
+	width: 15%;
 	text-align: center;
 	background-color: #EFEFEF;
 }
@@ -130,26 +131,34 @@ h1, h2, h3, h4 {
 	list-style-type: none;
 }
 
-.tabs li {
-	padding: 10px;
-	border-right: 2px solid #9F9F9F;
-	border-bottom: 2px solid #9F9F9F;
-	border-left: 2px solid #9F9F9F;
+.tabs button {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #9F9F9F;
+	font-family: 'Inter', sans-serif;
 }
 
-.tabs li:hover {
+.tabs button:hover {
 	cursor: pointer;
 	background-color: #CFCFCF;
 }
 
+.tabs p {
+	font-size: 14px;
+	margin-left: 5%;
+}
+
 .content {
-	width: 75%;
+	width: 85%;
 	margin-top: 75px;
 	margin-left: 50px;
 	margin-bottom: 75px;
 }
 
-.content h1 {
+.content h1, .content h2 {
 	font-weight: normal;
 }
 
