@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 	padding: 50px 100px 0px 100px;
 }
 
-#tests {
+.page {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -51,6 +51,7 @@ h1, h2, h3, h4 {
 	display: flex;
 	position: absolute;
 	border-radius: 7px;
+	text-decoration: none;
 	justify-content: center;
 	background-color: gray;
 	margin: 0px 0px 15px 15px;
@@ -84,17 +85,15 @@ h1, h2, h3, h4 {
 }
 
 #password {
+	margin: 0;
 	padding: 7px;
 	display: flex;
-	border-radius: 5px;
-	justify-content: center;
-	background-color: gray;
-}
-
-#password p {
-	margin: 0;
 	color: white;
 	font-size: small;
+	border-radius: 5px;
+	text-decoration: none;
+	justify-content: center;
+	background-color: gray;
 }
 
 #fav {
@@ -141,6 +140,21 @@ h1, h2, h3, h4 {
 .tabs li:hover {
 	cursor: pointer;
 	background-color: #CFCFCF;
+}
+
+.content {
+	width: 75%;
+	margin-top: 75px;
+	margin-left: 50px;
+	margin-bottom: 75px;
+}
+
+.content h1 {
+	font-weight: normal;
+}
+
+.content img {
+	box-shadow: 5px 5px 15px gray;
 }
 
 .navbar {
