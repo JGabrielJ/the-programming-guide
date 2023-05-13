@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Ubuntu+Mono&display=swap');
 
 body {
 	margin: 0;
@@ -153,9 +153,7 @@ h1, h2, h3, h4 {
 
 .content {
 	width: 85%;
-	margin-top: 75px;
-	margin-left: 50px;
-	margin-bottom: 75px;
+	margin: 75px 50px;
 }
 
 .content h1, .content h2 {
@@ -164,6 +162,58 @@ h1, h2, h3, h4 {
 
 .content img {
 	box-shadow: 5px 5px 15px gray;
+}
+
+.note {
+	width: 65%;
+	border-radius: 10px;
+	border: 2px outset gray;
+	padding: 15px 0px 0px 15px;
+	box-shadow: 5px 5px 15px gray;
+}
+
+.example {
+	width: 75%;
+	padding: 0px 15px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px 15px gray;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.code {
+	padding: 15px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.indent {
+	margin-left: 40px;
+}
+
+.var {
+	color: #4ABADA;
+}
+
+.command {
+	color: #C464C4;
+}
+
+.comp {
+	color: #4080C0;
+}
+
+.func {
+	color: #B9B929;
+}
+
+.str {
+	color: #E46464;
+}
+
+.num {
+	color: #82B262;
 }
 
 .navbar {
