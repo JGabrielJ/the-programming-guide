@@ -1,29 +1,21 @@
-<%- include('./partials/contentHeader') %>
+<%- include('./partials/header') %>
 	<div id="info">
-		<div class="col" id="details">
+		<div class="col-prof" id="details">
 			<h2 id="title"> Informações do Perfil </h2>
-			<div id="prof-info">
-				<dl>
-					<dt> Nome: </dt>
-					<dd> User Name Santos da Silva </dd>
-				</dl>
+			<form id="data">
+				<label for="name" form="data"> Nome: </label><br>
+				<input id="name" form="data" type="text" value="" placeholder="Digite seu nome..." size="80" required>
 
-				<dl>
-					<dt> Descrição: </dt>
-					<dd> "Não importa quem seja, nunca confie em ninguém; neste mundo estamos todos sozinhos!" </dd>
-				</dl>
+				<label for="desc" form="data"> Descrição: </label><br>
+				<input id="desc" form="data" type="text" value="" placeholder="Escreva algo sobre você..." size="80">
 
-				<dl>
-					<dt> Data de nascimento: </dt>
-					<dd> 29/02/1932 </dd>
-				</dl>
+				<label for="date" form="data"> Data de Nascimento: </label><br>
+				<input id="date" form="data" type="date" required>
 
-				<dl>
-					<dt> E-mail: </dt>
-					<dd> username67@gmail.com </dd>
-				</dl>
+				<label for="email" form="data"> Descrição: </label><br>
+				<input id="email" form="data" type="email" value="" placeholder="username67@gmail.com" size="80" required>
 
-				<a href="/change" id="password"> Alterar Dados </a>
+				<input id="password" form="data" type="reset" value="Alterar Dados">
 
 				<dl id="fav">
 					<dt><h3> Favoritos: </h3></dt>
@@ -31,22 +23,27 @@
 						<p> Você ainda não adicionou nada aos favoritos :( </p>
 					</div></dd>
 				</dl>
-			</div>
+			</form>
 		</div>
 
-		<div class="col" id="basic">
-			<div id="perf">
+		<!-- 
+			• Usar '<input type="file">'
+			• Usar '<input type="password">'
+			• Usar o atributo "readonly" do <input>
+			• Substituir '<input type="reset">' por '<input type="submit">'
+		-->
+
+		<div class="col-prof" id="basic">
+			<form id="photo">
 				<img src="./images/profile.png" alt="Profile Photo" id="prof-photo">
-				<a href="/change" id="box">
+				<span id="edit">
 					<img src="./images/pencil.png" alt="Pencil">
 					<p> Editar </p>
-				</a>
-			</div>
+				</span>
+			</form>
 
-			<dl>
-				<dt> Username: </dt>
-				<dd> USER_123 </dd>
-			</dl>
+			<label for="username" form="data"> Nome de Usuário: </label><br>
+			<input id="username" form="data" type="text" value="" placeholder="Digite seu nome de usuário..." required>
 		</div>
 	</div>
 <%- include('./partials/footer') %>
