@@ -2,48 +2,41 @@
 	<div id="info">
 		<div class="col-prof" id="details">
 			<h2 id="title"> Informações do Perfil </h2>
-			<form id="data">
-				<label for="name" form="data"> Nome: </label><br>
-				<input id="name" form="data" type="text" value="" placeholder="Digite seu nome..." size="80" required>
+			<form id="dados">
+				<label for="name" form="dados"> Nome: </label><br>
+				<input id="name" form="dados" type="text" value="" placeholder="Digite seu nome..." size="80"><br>
 
-				<label for="desc" form="data"> Descrição: </label><br>
-				<input id="desc" form="data" type="text" value="" placeholder="Escreva algo sobre você..." size="80">
+				<label for="desc" form="dados"> Descrição: </label><br>
+				<textarea id="desc" form="dados" rows="5" cols="83" maxlength="500" placeholder="Escreva algo sobre você..."></textarea><br>
 
-				<label for="date" form="data"> Data de Nascimento: </label><br>
-				<input id="date" form="data" type="date" required>
+				<label for="date" form="dados"> Data de Nascimento: </label><br>
+				<input id="date" form="dados" type="date"><br>
 
-				<label for="email" form="data"> Descrição: </label><br>
-				<input id="email" form="data" type="email" value="" placeholder="username67@gmail.com" size="80" required>
+				<label for="email" form="dados"> E-mail </label><br>
+				<input id="email" form="dados" type="email" value="" placeholder="username67@gmail.com" size="80"><br>
 
-				<input id="password" form="data" type="reset" value="Alterar Dados">
-
-				<dl id="fav">
-					<dt><h3> Favoritos: </h3></dt>
-					<dd><div id="fav-box">
-						<p> Você ainda não adicionou nada aos favoritos :( </p>
-					</div></dd>
-				</dl>
+				<input id="change" form="dados" type="button" value="Alterar Dados">
 			</form>
 		</div>
 
-		<!-- 
-			• Usar '<input type="file">'
-			• Usar '<input type="password">'
-			• Usar o atributo "readonly" do <input>
-			• Substituir '<input type="reset">' por '<input type="submit">'
-		-->
-
 		<div class="col-prof" id="basic">
-			<form id="photo">
-				<img src="./images/profile.png" alt="Profile Photo" id="prof-photo">
+			<label id="prof-photo" for="profile" form="dados">
+				<img id="image" src="./images/profile.png" alt="Profile Photo" width="256px" height="256px">
 				<span id="edit">
 					<img src="./images/pencil.png" alt="Pencil">
 					<p> Editar </p>
 				</span>
-			</form>
+			</label>
+			<input id="profile" form="dados" type="file">
 
-			<label for="username" form="data"> Nome de Usuário: </label><br>
-			<input id="username" form="data" type="text" value="" placeholder="Digite seu nome de usuário..." required>
+			<label for="userName" form="dados"> Nome de Usuário: </label><br>
+			<div id="userID">
+				<input id="userName" form="dados" type="text" value="" readonly>
+				<button type="button"><img id="showHide" src="./images/show.png" alt="Show"></button>
+			</div>
+			<p id="hint"> Clique no olho para ver seu ID... </p>
 		</div>
 	</div>
+
+	<script src="./javascripts/prof.js"></script>
 <%- include('./partials/footer') %>

@@ -43,11 +43,11 @@ h1, h2, h3, h4 {
 	background-color: #32CD32;
 }
 
-#profile {
+#profileIcon {
 	padding: 10px 15px 5px 15px;
 }
 
-#init, #python, #javascript, #html {
+#init, #python_row, #javascript_row, #html_row {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 75px 0px;
@@ -59,15 +59,15 @@ h1, h2, h3, h4 {
 	background-color: #FFE3E3;
 }
 
-#python {
+#python_row {
 	background-color: #DDFFAA;
 }
 
-#javascript {
+#javascript_row {
 	background-color: #D9ECEC;
 }
 
-#html {
+#html_row {
 	background-color: #FFF5A5;
 }
 
@@ -135,8 +135,18 @@ hr {
 	width: 40%;
 }
 
-#photo {
+#photo, #image {
 	border-radius: 50%;
+}
+
+#prof-photo {
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#profile {
+	display: none;
 }
 
 .box {
@@ -170,28 +180,75 @@ hr {
 	font-style: bold;
 }
 
-#info {
+.signin {
 	display: flex;
-	flex-wrap: nowrap;
-	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 150px 0px;
+	position: relative;
+	justify-content: center;
+}
+
+.signin::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	z-index: -1;
+	filter: blur(5px);
+	position: absolute;
+	background-image: url("../images/background.png");
+}
+
+.signin a {
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#login, #register, #forgot {
+	width: 25%;
+	padding: 20px;
+	font-size: 15px;
+	border-radius: 15px;
 	background-color: white;
-	justify-content: flex-start;
-	padding: 50px 100px 0px 100px;
+	box-shadow: 20px 20px 10px black;
+}
+
+#login input, #register input, #forgot input {
+	padding: 7px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 2px solid gray;
 	font-family: 'Inter', sans-serif;
 }
 
-#info dt {
-	padding-bottom: 5px;
+#username, #userid, #nome, #data, #e-mail, #usuario {
+	width: 94.5%;
+	margin: 5px 0px 10px 0px;
 }
 
-#info dd {
-	margin: 0;
-	padding: 3px;
-	border-radius: 5px;
-	border: 2px solid gray;
+#submit, #showID {
+	width: 75%;
+	margin: 25px 41px;
+	cursor: pointer;
 }
 
-#info input {
+.other {
+	display: flex;
+	justify-content: space-between;
+}
+
+#info {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 50px 100px;
+	align-items: flex-start;
+	background-color: white;
+	justify-content: flex-start;
+	font-family: 'Inter', sans-serif;
+}
+
+#info input, textarea {
 	padding: 7px;
 	font-size: 16px;
 	border-radius: 5px;
@@ -200,15 +257,22 @@ hr {
 	font-family: 'Inter', sans-serif;
 }
 
+#info textarea {
+	resize: none;
+}
+
 #date {
 	width: 97.7%;
 }
 
-#password {
+#change {
 	margin: 0;
 	width: 100%;
-	color: white;
 	cursor: pointer;
+}
+
+#change:hover, #submit:hover, #showID:hover {
+	color: white;
 	background-color: gray;
 }
 
@@ -219,16 +283,6 @@ hr {
 	background-color: white;
 	justify-content: flex-start;
 	font-family: 'Inter', sans-serif;
-}
-
-#photo {
-	cursor: pointer;
-	position: relative;
-	margin-bottom: 10px;
-}
-
-#prof-photo {
-	border-radius: 50%;
 }
 
 #edit {
@@ -251,6 +305,33 @@ hr {
 	padding-left: 5px;
 }
 
+#userID {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+    justify-content: space-between;
+}
+
+#userID input {
+	margin-right: 5px;
+}
+
+#userID button {
+	padding: 0;
+	border: none;
+	background: none;
+	margin-left: 5px;
+}
+
+#userID button:hover {
+	cursor: pointer;
+}
+
+#hint {
+	margin: 0;
+	color: white;
+}
+
 #details {
 	width: 70%;
 }
@@ -260,23 +341,6 @@ hr {
 	padding-bottom: 3px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid gray;
-}
-
-#fav {
-	padding-top: 50px;
-}
-
-#fav h3 {
-	font-weight: normal;
-}
-
-#fav-box {
-	height: 100px;
-}
-
-#fav-box p {
-	margin: 0;
-	padding: 5px;
 }
 
 .tabs {
@@ -327,6 +391,7 @@ hr {
 }
 
 .content img {
+	padding: 15px;
 	box-shadow: 5px 5px 15px gray;
 }
 

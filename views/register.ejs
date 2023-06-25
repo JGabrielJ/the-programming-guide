@@ -1,0 +1,26 @@
+<%- include('./partials/header') %>
+	<div class="signin">
+		<form id="register">
+			<label for="nome" form="register"> Nome: </label><br>
+            <input id="nome" form="register" type="text" placeholder="Ex.: João Gomes"><br>
+
+            <label for="data" form="register"> Data de Nascimento: </label><br>
+            <input id="data" form="register" type="date"><br>
+
+            <label for="e-mail" form="register"> Email: </label><br>
+            <input id="e-mail" form="register" type="email" placeholder="Ex.: joao.gomes29@gmail.com"><br>
+
+            <label for="usuario" form="register"> Nome de Usuário: </label><br>
+            <input id="usuario" form="register" type="email" placeholder="Ex.: JoaoGomesRN"><br>
+
+            <input id="submit" form="register" type="button" value="Cadastrar-se"><br>
+
+            <div class="other">
+                <a href="/login"> Fazer login </a>
+                <a href="/forgot"> Esqueceu seu ID? </a>
+            </div>
+		</form>
+	</div>
+
+	<script src="./javascripts/regis.js"></script>
+<%- include('./partials/footer') %>
