@@ -205,7 +205,7 @@ hr {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#login, #register, #forgot {
+#login, #register, #delete {
 	width: 25%;
 	padding: 20px;
 	font-size: 15px;
@@ -214,7 +214,7 @@ hr {
 	box-shadow: 20px 20px 10px black;
 }
 
-#login input, #register input, #forgot input {
+#login input, #register input, #delete input {
 	padding: 7px;
 	font-size: 15px;
 	border-radius: 5px;
@@ -222,15 +222,15 @@ hr {
 	font-family: 'Inter', sans-serif;
 }
 
-#username, #userid, #nome, #data, #e-mail, #usuario {
+#username, #userid, #checkid, #nome, #data, #e_mail, #usuario {
 	width: 94.5%;
 	margin: 5px 0px 10px 0px;
 }
 
-#submit, #showID {
+#submit, #deletar {
 	width: 75%;
-	margin: 25px 41px;
 	cursor: pointer;
+	margin: 25px 12.5%;
 }
 
 .other {
@@ -252,7 +252,6 @@ hr {
 	padding: 7px;
 	font-size: 16px;
 	border-radius: 5px;
-	margin: 5px 0px 10px 0px;
 	border: 2px solid gray;
 	font-family: 'Inter', sans-serif;
 }
@@ -261,17 +260,18 @@ hr {
 	resize: none;
 }
 
-#date {
-	width: 97.7%;
+#name, #desc, #date, #email {
+	width: 97.5%;
+	margin: 5px 0px 10px 0px;
 }
 
 #change {
-	margin: 0;
-	width: 100%;
+	width: 50%;
 	cursor: pointer;
+	margin: 25px 25% 0px 25%;
 }
 
-#change:hover, #submit:hover, #showID:hover {
+#change:hover, #submit:hover, #deletar:hover {
 	color: white;
 	background-color: gray;
 }
@@ -328,8 +328,8 @@ hr {
 }
 
 #hint {
-	margin: 0;
 	color: white;
+	margin-top: 10px;
 }
 
 #details {
@@ -472,8 +472,4 @@ footer h6 {
 .ref a {
 	color: deepskyblue;
 	text-decoration: none;
-}
-
-#email {
-	color: blue;
 }
