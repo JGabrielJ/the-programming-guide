@@ -395,14 +395,6 @@ hr {
 	box-shadow: 5px 5px 15px gray;
 }
 
-.note {
-	width: 65%;
-	border-radius: 10px;
-	border: 2px outset gray;
-	padding: 15px 0px 0px 15px;
-	box-shadow: 5px 5px 15px gray;
-}
-
 .example {
 	width: 75%;
 	padding: 0px 15px;
@@ -424,27 +416,35 @@ hr {
 }
 
 .var {
-	color: #4ABADA;
+	color: deepskyblue;
 }
 
 .command {
-	color: #C464C4;
+	color: mediumpurple;
 }
 
 .comp {
-	color: #4080C0;
+	color: mediumblue;
+}
+
+.title {
+	color: dodgerblue;
 }
 
 .func {
-	color: #B9B929;
+	color: goldenrod;
+}
+
+.chav {
+	color: gold;
 }
 
 .str {
-	color: #E46464;
+	color: indianred;
 }
 
 .num {
-	color: #82B262;
+	color: forestgreen;
 }
 
 footer h6 {

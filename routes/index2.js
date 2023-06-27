@@ -30,7 +30,6 @@ router.post('/', upload.single('profile'), async function(req, res, next) {
 		image: req.file ? `./images/profiles/${req.file.filename}` : "./images/profile.png"
 	};
 
-	console.log(doc);
 	try {
 		await client.connect();
 		const result = await dataUsers.updateUser(client, ID, doc);
